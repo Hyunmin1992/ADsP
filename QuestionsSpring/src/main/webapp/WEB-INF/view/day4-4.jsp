@@ -1,0 +1,183 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<meta charset="EUC-KR">
+<title>ADsP</title>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/js/check.js"></script>
+
+</head>
+<style type="text/css">
+input[type=radio] {
+	width: 20px;
+	height: 20px;
+}
+</style>
+<body>
+	<header>
+		<div class="container px-5 py-5 bg-light">
+			<h1 align="center">ADsP 문제 풀이 4일차</h1>
+		</div>
+	</header>
+	<main>
+	<div id="questions">
+
+		<hr>
+		<h2>
+			<div align="center">통계 분석의 이해</div>
+		</h2>
+
+		<div class="container px-5 py-5" id="Bigtable">
+			<form action="javascript:C44('${sessionScope.name}','${sessionScope.phone}')" method="post">
+				<div>
+												<p style="color:red">12회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">1.&nbsp;&nbsp;다음 중 모집단에서 표본을 추출하는 방법이 아닌 것은?</h3>
+				</div>
+				<br>
+				<div class="row mt-0">
+					<div class="col-md-5"></div>
+					<div class="col-md-6" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A1" value="1">&nbsp;&nbsp;&nbsp;단순랜덤추출법<br>
+						<br> <input type="radio" name="A1" value="2">&nbsp;&nbsp;&nbsp;계통추출법<br>
+						<br> <input type="radio" name="A1" value="3">&nbsp;&nbsp;&nbsp;층화추출법<br>
+						<br> <input type="radio" name="A1" value="4">&nbsp;&nbsp;&nbsp;깁스추출법<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				<br>
+				<div>
+								<p style="color:red">13회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">
+						2.&nbsp;&nbsp;자료의 정보를 이용해 집단에 관한 추측, 결론을 이끌어내는 과정인 통계적 추론에 대한 설명으로 가장 부적절한 것은?
+					</h3>
+				</div><br>
+
+				<div class="row mt-0">
+					<div class="col-md-0"></div>
+					<div class="col-md-12" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A2" value="1">&nbsp;&nbsp;&nbsp;전수조사가 불가능하면 모집단에서 표본을 추출하고 표본을 근거로 확률론을 활용하여 모집단의 모수들에 대해 추론하는 것을 추정이라 한다.<br>
+						<br> <input type="radio" name="A2" value="2">&nbsp;&nbsp;&nbsp;점 추정은 표본의 정보로부터 모집단의 모수를 하나의 값으로 추정하는 것이다.<br>
+						<br> <input type="radio" name="A2" value="3">&nbsp;&nbsp;&nbsp;통계적 추론은 제한된 표본을 바탕으로 모집단에 대한 일반적인 결론을 유도하려는 시도이므로 본질적으로 불확실성을 수반한다.<br>
+						<br> <input type="radio" name="A2" value="4">&nbsp;&nbsp;&nbsp;구간추정은 모수의 참값이 포함되어 있다고 추정되는 구간을 결정하는 것이며, 실제 모집단의 모수는 신뢰구간에 포함되어야 한다.<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				<br>
+
+				<div>
+												<p style="color:red">19회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">
+						3.&nbsp;&nbsp;모집단내에서 모집단의 특성을 잘 나타낼 수 있는 일부를 추출하여 이들로부터 자료를 수집하고 수집된 자료를 토대로 모집단의 특성을 추정하게 된다. 이 때 조사하는 모집단의 일부분을 표본이라 한다. 다음 중 표본조사에 대한 설명으로 가장 부적절한 것은?
+					</h3>
+				</div><br>
+								
+				<div class="row mt-0">
+					<div class="col-md-0"></div>
+					<div class="col-md-12" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A3" value="1">&nbsp;&nbsp;&nbsp;표본오차는 모집단을 대표할 수 있는 표본 단위들이 조사대상으로 추출되지 못함으로써 발생하는 오차이다.<br>
+						<br> <input type="radio" name="A3" value="2">&nbsp;&nbsp;&nbsp;표본편의는 모수를 작게 또는 크게할 때 추정하는 것과 같이 표본추출방법에서 기인하는 오차를 의미한다.<br> 
+						<br> <input type="radio" name="A3" value="3">&nbsp;&nbsp;&nbsp;표본편의는 확률하에 의해 최소화하거나 없앨 수 있다. 확률화란 모집단으로부터 편의되지 않은 표본을 추출하는 절차를 의미하며 확률화 절차에 의해 추출된 표본을 확률표본이라 한다.<br>
+						<br> <input type="radio" name="A3" value="4">&nbsp;&nbsp;&nbsp;비표본오차는 표본오차를 제외한 모든 오차로 조사 과정에서 발생하는 모든 부주의나 실수, 알 수 없는 원인등 모든 오차를 의미하며 조사대상이 증가한다고해서 오차가 커지지는 않는다.<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				<br>
+				<div><p style="color:red">19회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">4.&nbsp;&nbsp;다음은 척도에 대한 설명이다. 다음 중 설명이 잘못된 것은 무엇인가?</h3>
+				</div><br>
+
+				<div class="row mt-0">
+					<div class="col-md-1"></div>
+					<div class="col-md-11" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A4" value="1">&nbsp;&nbsp;&nbsp;명목척도는 단순한 번호로 차례는 의미가 없다.<br>
+						<br> <input type="radio" name="A4" value="2">&nbsp;&nbsp;&nbsp;순서척도는 순서가 의미를 가지는 번호이다.<br>
+						<br> <input type="radio" name="A4" value="3">&nbsp;&nbsp;&nbsp;구간척도는 순서뿐만 아니라 그 간격도 의미가 있으며 0이 절대적인 의미를 가진다.<br>
+						<br> <input type="radio" name="A4" value="4">&nbsp;&nbsp;&nbsp;비율척도는 0을 기준으로하는 절대적 척도를 간격뿐만 아니라 비율에도 의미가 있다.<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				<br>
+				<div>
+				<p style="color:red">22회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">5.&nbsp;&nbsp;측정 대상이 어느 집단에 속하는지 분류할 때 사용되는 척도로 성별, 출생지 구분 등을 할 때 사용되는 척도는?</h3>
+				</div>
+
+				<div class="row mt-0">
+					<div class="col-md-5"></div>
+					<div class="col-md-6" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A5" value="1">&nbsp;&nbsp;&nbsp;명목척도<br>
+						<br> <input type="radio" name="A5" value="2">&nbsp;&nbsp;&nbsp;순서척도<br>
+						<br> <input type="radio" name="A5" value="3">&nbsp;&nbsp;&nbsp;구간척도<br>
+						<br> <input type="radio" name="A5" value="4">&nbsp;&nbsp;&nbsp;비율척도<br>
+					</div>
+				</div>
+				<br>
+				<hr>
+					<br>
+				<div>
+				<p style="color:red">18회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">6.&nbsp;&nbsp;통계적 추론이란 자료의 정보를 이용하여 모집단에 관한 추측이나 결론을 이끌어 내는 가정이다. 이 과정은 추정과 가설검정을 통하여 이루어진다.
+					다음 중 추정과 가설검정에 대한 설명으로 가장 부적절한 것은?</h3>
+				</div>
+
+				<div class="row mt-0">
+					<div class="col-md-0"></div>
+					<div class="col-md-12" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A6" value="1">&nbsp;&nbsp;&nbsp;가장 참값이라고 여겨지는 하나의 모수 값을 택하는 것을 점 추정이라고 한다. 즉, 점추정은 모수가 특정한 값일 것이라고 추정하는 것이다.<br>
+						<br> <input type="radio" name="A6" value="2">&nbsp;&nbsp;&nbsp;구간추정이란 일정한 크기의 신뢰구간으로 모수가 특정한 구간에 있을 거이라고 선언하는 것으로 구해진 구간을 신뢰구간이라고 한다.<br>
+						<br> <input type="radio" name="A6" value="3">&nbsp;&nbsp;&nbsp;귀무가설이 사실일 때, 관측된 검정통계량의 값보다 더 대립가설을 지지하는 검정통게량이 나올 확률을 p값이라고 한다.<br>
+						<br> <input type="radio" name="A6" value="4">&nbsp;&nbsp;&nbsp;기각역이란 대립가설이 맞을 때 그것을 받아들이는 확률을 의미한다.<br>
+					</div>
+				</div>
+				<br>
+				<hr>
+				<br> <br>
+				<div class="py-5" align="center">
+					<button type="submit" class="btn btn-success"><p style="font-size:30px">제출하기</p></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	</main>
+	<br>
+	<br>
+	<footer>
+		<div class="container px-5 pb-5">
+			<div class="row">
+				<c:choose>
+					<c:when test="${nextpage ne 2}">
+						<div class="col-md-6" align="left">
+							<a href="/day/${day}/${prepage}"><div class="btn btn-light"><p style="font-size:30px">이전
+									문제</p></div></a>
+						</div>
+					</c:when>
+					<c:otherwise>
+						<div class="col-md-6" align="left">
+							<a href="/questionList"><div class="btn btn-light"><p style="font-size:30px">일차
+									선택</p></div></a>
+						</div>
+					</c:otherwise>
+				</c:choose>
+				<div class="col-md-6" align="right">
+					<a href="/day/${day}/${nextpage}"><div class="btn btn-light	"><p style="font-size:30px">다음문제</p></div></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

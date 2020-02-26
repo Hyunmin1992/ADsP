@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<meta charset="utf-8">
+<title>ADsP</title>
+<script src="js/check.js"></script>
+
+</head>
+<style type="text/css">
+input[type=radio] {
+	width: 20px;
+	height: 20px;
+}
+</style>
+<body>
+	<header>
+		<div class="container px-5 py-5 bg-light">
+			<h1 align="center">ADsP 문제 풀이 8일차</h1>
+		</div>
+	</header>
+	<main>
+	<div id="questions">
+
+		<hr>
+		<h2>
+			<div align="center">연관분석</div>
+		</h2>
+
+		<div class="container px-5 py-5" id="Bigtable">
+			<form action="javascript:C85()" method="post">
+				<div>
+												<p style="color:red">16회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">1.&nbsp;&nbsp;다음 중 연관성 분석에 대한 설명으로 부적절한 것은?</h3>
+				</div>
+				<br>
+				<div class="row mt-0">
+					<div class="col-md-0"></div>
+					<div class="col-md-12" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A1" value="1">&nbsp;&nbsp;&nbsp;Apriori알고리즘은 최소지지도보다 큰 빈발항목집합에서 높은 측도(신뢰도,향상도)값을 갖는 연관규칙을 구하는 방법이다.<br>
+						<br> <input type="radio" name="A1" value="2">&nbsp;&nbsp;&nbsp;연관성 분석은 하나 이상의 제품이나 서비스를 포함하는 거래 내역을 이용하여 동시에 구매되는 제품별 거래 빈도표를 통해 규칙을 찾는데서 시작했다.<br>
+						<br> <input type="radio" name="A1" value="3">&nbsp;&nbsp;&nbsp;품목 A와 품목 B의 구매가 상호 관련이 없다면 향상도는 1 이하이다.<br>
+						<br> <input type="radio" name="A1" value="4">&nbsp;&nbsp;&nbsp;사건들이 어떤 순서로 일어나고 이 사건들 사이에 연관성을 알아내는 것이 시차 연관분석이지만 원인과 결과의 형태로 해석되지 않는다.<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				
+				<br>
+				<div>
+					<p style="color:red">19회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">2.&nbsp;&nbsp;다음 중 연관성 분석의 장점으로 가장 부적절한 것은?</h3>
+				</div>
+				<div class="row mt-0">
+									<div class="col-md-2"></div>
+					<div class="col-md-10" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A2" value="1">&nbsp;&nbsp;&nbsp;조건반응(IF-TEHN)으로 표현되어 결과를 이해하기 쉽다.<br>
+						<br> <input type="radio" name="A2" value="2">&nbsp;&nbsp;&nbsp;목적변수가 없어 분석 방향이나 목적이 없어도 적용이 가능하다.<br>
+						<br> <input type="radio" name="A2" value="3">&nbsp;&nbsp;&nbsp;품목 세분화에 관계없이 의미 있는 규칙 발견이 가능하다.<br>
+						<br> <input type="radio" name="A2" value="4">&nbsp;&nbsp;&nbsp;분석을 위한 계산이 상당히 간단하다.<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>				
+	
+				<br>
+				<div>
+								<p style="color:red">19회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">3.&nbsp;&nbsp;연관규칙의 측정 지표 중 품목 A,B에 대한 지지도를 구하기 위한 식으로 적절한 것은?</h3>
+				</div><br>
+				<div class="row mt-0">
+									<div class="col-md-2"></div>
+					<div class="col-md-10" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A3" value="1">&nbsp;&nbsp;&nbsp;(A와 B가 포함된 거래수)/(전체 거래 수)<br>
+						<br> <input type="radio" name="A3" value="2">&nbsp;&nbsp;&nbsp;(A와 B가 동시에 포함된 거래수)/(전체 거래 수)<br>
+						<br> <input type="radio" name="A3" value="3">&nbsp;&nbsp;&nbsp;(A와 B가 동시에 포함된 거래수)/(A를 포함하는 거래 수)<br>
+						<br> <input type="radio" name="A3" value="4">&nbsp;&nbsp;&nbsp;(A와 B가 동시에 포함된 거래수)/(A또는 B가 포함된 거래 수)<br>
+					</div>
+				</div>
+			
+				<div class="py-5" align="center">
+					<button type="submit" class="btn btn-success"><p style="font-size:30px">제출하기</p></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	</main>
+	<br>
+	<br>
+	<footer>
+		<div class="container px-5 pb-5">
+			<div class="row">
+
+						<div class="col-md-6" align="left">
+							<a href="84.html"><div class="btn btn-light"><p style="font-size:30px">이전
+									문제</p></div></a>
+						</div>
+
+
+				<div class="col-md-6" align="right">
+		<a href="questionList.html"><div class="btn btn-light"><p style="font-size:30px">회차 종료</p></div></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

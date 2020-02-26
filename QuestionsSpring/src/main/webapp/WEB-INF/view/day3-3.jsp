@@ -1,0 +1,137 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<meta charset="EUC-KR">
+<title>ADsP</title>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/js/check.js"></script>
+
+</head>
+<style type="text/css">
+input[type=radio] {
+	width: 20px;
+	height: 20px;
+}
+</style>
+<body>
+	<header>
+		<div class="container px-5 py-5 bg-light">
+			<h1 align="center">ADsP 문제 풀이 3일차</h1>
+		</div>
+	</header>
+	<main>
+	<div id="questions">
+
+		<hr>
+		<h2>
+			<div align="center">데이터 거버넌스 체계 수립</div>
+		</h2>
+
+		<div class="container px-5 py-5" id="Bigtable">
+			<form action="javascript:C33('${sessionScope.name}','${sessionScope.phone}')" method="post">
+				<div>
+												<p style="color:red">18회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">1.&nbsp;&nbsp;데이터 표준용어 설정, 명명 규칙 수립, 메타 데이터 구축, 데이터 사전 구축등의 업무로 구성된 데이터 거버넌스 체계는 데이터 거버넌스 체계 항목들 중에 무엇인가?</h3>
+				</div>
+				<br>
+				<div class="row mt-0">
+					<div class="col-md-4"></div>
+					<div class="col-md-6" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A1" value="1">&nbsp;&nbsp;&nbsp;데이터 표준화<br>
+						<br> <input type="radio" name="A1" value="2">&nbsp;&nbsp;&nbsp;데이터 관리 체계<br>
+						<br> <input type="radio" name="A1" value="3">&nbsp;&nbsp;&nbsp;데이터 저장소 관리<br>
+						<br> <input type="radio" name="A1" value="4">&nbsp;&nbsp;&nbsp;표준화 활동<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				<br>
+				<div>
+								<p style="color:red">19회 21회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">
+						2.&nbsp;&nbsp;데이터 분석을 위한 조직 구조중 아래 보기에 해당하는 것은?
+					</h3>
+				</div>
+								<div class="container border border-dark">
+					<h4 class="py-3" align="center">
+						 사전 분석업무를 별도의 분석 전담 조직에서 담당<br>
+						 전략적 중요도에 따라 분석 조직이 우선순위를 정해서 진행 가능<br>
+						 현업 업무부서의 분서업무와 이중화/이원화 가능성 높음
+					</h4>
+				</div>
+				<div class="row mt-0">
+					<div class="col-md-4"></div>
+					<div class="col-md-6" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A2" value="1">&nbsp;&nbsp;&nbsp;집중구조<br>
+						<br> <input type="radio" name="A2" value="2">&nbsp;&nbsp;&nbsp;기능구조<br>
+						<br> <input type="radio" name="A2" value="3">&nbsp;&nbsp;&nbsp;분산구조<br>
+						<br> <input type="radio" name="A2" value="4">&nbsp;&nbsp;&nbsp;복합구조<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				<br>
+
+				<div>
+				<p style="color:red">19회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">
+						3.&nbsp;&nbsp;데이터 표준화에 대한 설명으로 가장 적절한 것은?
+					</h3>
+				</div>
+				<div class="row mt-0">
+					<div class="col-md-1"></div>
+					<div class="col-md-11" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A3" value="1">&nbsp;&nbsp;&nbsp;데이터 표준화란 데이터 정합성 및 활용의 효율성을 위하여 표준 데이터를 포함한 메타 데이터와 데이터 사전의 관리 원칙을 수립하는 것이다.<br>
+						<br> <input type="radio" name="A3" value="2">&nbsp;&nbsp;&nbsp;데이터 표준 용어 설정, 명명 규칙 수립, 메타 데이터 구축, 데이터 사전 구축 등의 업무로 구성된다.<br>
+						<br> <input type="radio" name="A3" value="3">&nbsp;&nbsp;&nbsp;메타 데이터 및 표준데이터를 관리하기 위한 전사 차원의 저장소를 구축하는 것이다.<br>
+						<br> <input type="radio" name="A3" value="4">&nbsp;&nbsp;&nbsp;데이터 거버넌스 체계를 구축한 후 표준 준수 여부를 주기적으로 점검하고 모니터링하는 것이다.<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+			
+				<br> <br>
+				<div class="py-5" align="center">
+					<button type="submit" class="btn btn-success"><p style="font-size:30px">제출하기</p></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	</main>
+	<br>
+	<br>
+	<footer>
+		<div class="container px-5 pb-5">
+			<div class="row">
+				<c:choose>
+					<c:when test="${nextpage ne 2}">
+						<div class="col-md-6" align="left">
+							<a href="/day/${day}/${prepage}"><div class="btn btn-light"><p style="font-size:30px">이전
+									문제</p></div></a>
+						</div>
+					</c:when>
+					<c:otherwise>
+						<div class="col-md-6" align="left">
+							<a href="/questionList"><div class="btn btn-light"><p style="font-size:30px">일차
+									선택</p></div></a>
+						</div>
+					</c:otherwise>
+				</c:choose>
+				<div class="col-md-6" align="right">
+					<a href="/day/${day}/${nextpage}"><div class="btn btn-light	"><p style="font-size:30px">다음문제</p></div></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

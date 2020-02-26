@@ -1,0 +1,239 @@
+1-1-1. 데이터의 이해
+    
+    - 데이터와 정보
+        데이터 : 있는 그대로의 사실 ( EX. A 마트 우유 300원 , B 마트 우유 500원 )   -> 데이터의 존재적 특성.
+        정보 : 데이터를 가공하여 얻은 의미있는 사실 ( EX. A 마트 우유가 200원 저렴하다. )  -> 데이터가 정보가 될 수 있다는 데이터의 당위적 특성
+    
+    - 데이터의 유형
+        정성적 데이터 : 글자 or 문자 데이터 (비정형 데이터)
+        정량적 데이터 : 숫자 or 도형 or 기호 데이터 (정형 데이터)
+    
+    - 데이터의 순환 구조
+        내면화 -> 공통화 -> 표출화 -> 연결화 -> 내면화
+        내면화 : 개인의 몸에 지식이 축적
+        공통화 : 개인의 지식을 외부에서 활용되고자 함.
+        표출화 : 개인의 지식이 외부로 나가기위한 형식화되는 과정
+        연결화 : 형식화된 다른 사람의 지식을 나의 지식위에 얹음으로써 지식간의 연결
+    
+    - DIKW 피라미드
+        데이터 : 있는 그대로의 사실 ( EX. A 마트 우유 300원 , B 마트 우유 500원 )
+        정보 : 데이터를 가공한 사실 ( EX. A 마트 우유가 200원 저렴하다. )
+        지식 : 정보에서 나온 개인의 판단 ( EX. 우유는 A 마트에서 사야한다. )
+        지혜 : 지식으로 부터 나온 추론 ( EX. A 마트가 다른 제품들도 저렴할 것 이다.)
+        
+1-1-2. 데이터 베이스
+     
+     - 데이터베이스 : 데이터의 저장소
+        RDBMS : Oracle, MySQL, MariaDB, SQL Server 등이 존재. (SQL을 사용)
+        NoSQL : MongoDB, ElasticSearch 등이 존재. (Not only SQL)
+     
+     - 데이터베이스의 특징
+        통합된 데이터 : 데이터의 중복이 없다. (Primary key 를 의미 - 주민번호는 중복될 수 없다.)
+        저장된 데이터 : USB, SSD 같은 컴퓨터가 접근 가능한 매체에 저장되어 있다.
+        공용 데이터 : 원하는 범위내의 사용자가 공유할 수 있다.
+        변화하는 데이터 : 데이터의 삽입, 수정, 삭제가 가능하다.
+        
+     - 기업내부 데이터베이스
+        - 과거
+           - OLTP ( On Line Transction Processing ) : 데이터의 거래 하나하나 에 초점을 맞추었다. ( EX. 주문 )
+           - OLAP ( On Line Analytic Processing ) : OLTP 로부터 축적된 데이터의 분석에 초점을 맞추었다. ( EX. 고객유형파악)
+        - 현재
+            - CRM ( Customer Relationship Management ) : 고객의 유치를 위한 고객 정보 분석
+            - ERP ( Enterprise Resource Planning ) : 회사의 경영을 위한 모든 자원 통합 관리
+            - BI ( Business Intelligence ) : AI 같이 회사의 의사결정을 위한 분석 프로세스
+            - RTE ( Real Time Enterprise ) : CRM, ERP, BI 등을 통합한 실시간 운영
+            - KMS ( Knowledge Management System ) : 지식관리 시스템으로써 직원의 유무에 구애받지 않는 환경을 목표
+            - SCM ( Supply Chain Management ) : 공급망 관리, 언제 어디서 무엇을 위한 관리 ( 최적의 장소와 시간의 탐색 )
+            - EAI ( Enterprise Application Integration ) : 기업의 모든 어플리케이션을 통합 ( 효율적인 기업 운영 )
+        
+1-2-1. 빅 데이터의 이해
+      
+      - 빅 데이터의 3V : Volumne , Variety, Velocity ( 양, 다양성, 처리속도 )
+      - 빅 데이터의 출현 배경
+          - 산업계 : 고객정보의 축적 ( EX. 네이버, 카카오 )
+          - 학계 : 거대 데이터, 활용 과학의 확산 ( EX. 게놈 프로젝트 - 비용과 처리속도의 만배가까운 증가 )
+          - 인재, 조직의 변화 : 디지털화, 저장기술, 클라우드 컴퓨팅
+      
+      - 빅데이터의 기능
+          - 산업혁명의 석탄, 철 : 차세대 산업을 위한 기반
+          - 원유 : 21세기를 지탱할 에너지원
+          - 렌즈 : 기존에 알지 못 하던 가치를 창출
+          - 플랫폼 : 플랫폼을 통한 다양한 서비스 창출
+      
+      - 빅데이터의 변화
+          - 사전처리 -> 사후처리 : 불필요한 정보를 버리지 않고 모두 축적
+          - 질 -> 양 : 이름 그대로 질보다 양에 중시
+          - 표본조사 -> 전수조사 : 기술의 발전으로 시간과 금액에 구애 받지 않고 전수 조사가 가능.
+          - 인과관계 -> 상관관계 : 수많은 데이터의 존재로 상관관계도 의미를 가진다.
+      
+1-2-2. 빅데이터의 분석기술
+          - 유형분석 : 분류가 목적 ( EX. 고객의 성향별로 나눈뒤 차별화된 서비스가 가능 )
+          - 연관분석 : 두변수 혹은 그 이상의 변수들의 인과관계를 분석 ( EX. 맥주는 기저귀와 함께 잘 팔린다. ) 
+          - 유전자 알고리즘 : 순간의 최적해를 찾는다. ( EX. 최고의 시청률을 얻기위한 방송시간대는? )
+          - 기계학습 : 수많은 과거데이터로 모델을 만들고 새로운 데이터의 예측
+          - 회귀분석 : 수치형데이터를 분석 A가 얼마일 때 B는 얼마일까? ( EX. 얼마를 투자하면 얼마를 벌 수 있을까? )
+          - 소셜 네트워크 분석 : 인터넷상 사람들관의 관계를 분석 ( EX. 페이스북의 친구나, 인스타그램의 팔로우를 통한 사람들관의 연관성 분석 )
+          - 감정 분석 : 텍스트 분석을 통한 긍정 부정여부 파악 ( EX. 영화의 평가를 분석하여 긍정이다 부정이다를 판별 )
+          
+      - 위기요인과 통제요인
+          - 사생활 침해 -> 동의에서 책임으로
+              : 구글은 수많은 데이터로 사용자의 1시간 이내 활동을 87% 정확도로 예측가능 해졌다.
+                 -> 고객의 동의가 아닌 사용자의 책임으로 전환
+          - 책임 원칙 훼손 -> 결과 기반 책임 고수
+              : 예측으로 인한 범죄 발생이전의 체포가 가능해졌다.
+                  -> 예측으로 인한 체포가 아닌 결과로 인한 체포를 고수.
+          - 데이터 오용 -> 알고리즘 접근 허용
+              : 데이터 오용으로 피해보는 사람이 발생 ( EX. 미국의 탑승자 금지 목록에 미국 상원의원이 포함되어 있었다. )
+                  -> 알고리즘 접근 허용으로 피해자를 구제할 수 있도록 한다.
+
+1-3-1. 데이터 사이언스
+
+    - 데이터 사이언스는 데이터로부터 의미 있는 정보를 추출해내는 학문이다.
+    
+    - 데이터 사이언스의 구성요소
+           - 분석적 영역 : 수학, 통계학적 지식 등
+           - 데이터 처리관련 IT 영역 : 시그널 프로세싱, 프로그래밍 등
+           - 비즈니스 컨설팅 영역 : 커뮤니케이션, 스토리텔링, 시각화 등
+    
+    - 데이터 사이언티스트는 데이터 사이언스를 기반으로 데이터 속에서 가치를 창출해 내는사람이다.
+    
+    - 데이터 사이언티스트의 요구 역량
+           - IT 전문성, Analytics ( Hard Skill ) : 빅데이터에 대한 이론지식, 분석 기술에 대한 숙련
+           - 비즈니스 분석, Analytics ( Soft Skill ) : 통찰력 있는전달, 설득력 있는 전달, 다분야간 협력
+           - Analytics 는 Hard Skill 과 Soft Skill 사이에 다리를 놓고 있다.
+     
+     - 데이터 사이언스의 한계
+           - 아무리 기술이 발전하더라도 분석에 따라 결과해석은 주관적이기에 사람의 개입이 필연적이다.
+
+1-3-2. 최신 빅데이터 상식
+    
+     - 개인정보 비식별 기술
+            - 데이터 마스킹 : 데이터의 정보를 알 수 없는 문자로 치환, 셔플 암호화
+            - 가명 처리 : 값을 다른 값으로 변경
+            - 총계 처리 : 하나하나의 값보다 전체에 대한 요약값만을 보여준다.
+            - 데이터 값 삭제 : 데이터 값 자체를 삭제한다.
+            - 데이터 범주화 : 하나의 값에 대한 범위를 제공하여 준다.
+     
+     - 무결성과 레이크
+            - 데이터 무결성 : 데이터는 항상 정확한 일관성, 유효성, 신뢰성을 보장하고 있어야한다.
+            - 데이터 레이크 : 하둡같이 대용량의 정형 비정형을 모두 저장하는 대규모 데이터 베이스이다.
+
+1-1-1. Understaning of Data
+
+    - Data and Information
+        - Data : a group of facts as it is. -> Feature of Existence.
+        - Information : a refined data that has something meaningful. -> Feature of thinking. ( Information comes from data )
+        
+    - Type of Data
+        - Qualitative data : language and letters ( Unstructured Data )
+        - Quantative data : Numeric, shape and sign ( Structured Data )
+        
+    - The cycle of Data
+        - Internalization -> Socialization -> Externalization -> Connection -> Internalization
+            - Internalization : The thing that knowledge is accumulated to someone's muscle memory.
+            - Socialization : The thing that someone's knowledge is going out society.
+            - Externalization : The thing that someone's knowledge is being structured like becoming a book.
+            - Connection : The thing that knowledge is connecting to someone's knowledge and becoming new knowledge.
+    - DIKW pyramid
+        - Data : a group of facts as it is. ( A mart has a milk of $1 , Bmart has a milk of $3 )
+        - Information :  a refined data that has something meaningful. ( A mart milk is $2 cheaper than B milk )
+        - Knowledge : someone's judge from information ( should buy milk at A mart. )
+        - Wisdom : someone's prediction from knowledge. ( Other items will be cheaper than B mart has )
+ 
+1-1-2. Database.
+
+    - Database : a repository of data
+        RDBMS : For exmpale, Oracle, MySQL, MariaDB, SQL Server. ( SQL )
+        NoSQL : For exmpale, MongoDB, ElasticSearch. (Not only SQL)
+     
+     - Features of Database
+        Integrated Data : No duplicated Data ( primary key such as SSN )
+        Stored Data : Data is stored in something like USA, SSD which computers can access.
+        Shared Data : Data can be shared with others that owner assigned
+        Changeable Data : Data can be inserted, deleted, modified.
+
+     - Business Database
+        - Past
+            - OLTP ( On Line Transction Processing ) : Focusing on each transaction ( EX. ordering )
+           - OLAP ( On Line Analytic Processing ) : Focusing on analysis with data from OLTP ( EX. Understanding of Customers)
+        - Present
+            - CRM ( Customer Relationship Management ) : Customer analysis for not making customers leave.
+            - ERP ( Enterprise Resource Planning ) : Planning for effective use of all the resource company has.
+            - BI ( Business Intelligence ) : Process of decision at Business
+            - RTE ( Real Time Enterprise ) : The thing that is integrated with CRM, ERP, BI even real time.
+            - KMS ( Knowledge Management System ) : To sustain business with or withour employees.
+            - SCM ( Supply Chain Management ) : To find the best time and the best place.
+            - EAI ( Enterprise Application Integration ) : Integration for all the application for effective business.
+        
+1-2-1. Understanding of Big data
+      
+      - 3V of Big data : Volumne , Variety, Velocity
+      - Background of Big data
+          - Industry : Accumulation of user information ( EX. google, naver, kakao )
+          - Academy : Tremendous data ( EX. genome project - Increase of effectiveness in terms of cost and time )
+          - Change in group : Digitalization, storing skill, cloud computing
+      
+      - Feature of Big data
+          - Coal and Iron : Base for new generation.
+          - Gasoline : Energy for 21th century
+          - Lens : To find out new value that has not been discovered.
+          - Platform : New service will come out from platform like facebook.
+      
+      - Change from Big data
+          - Pretreatment -> after treatment : not throwing unnecessary data before analysis.
+          - Quality -> Quantity : Quantity can be better than quality.
+          - Sample survey -> Complete enumeration survey : due to the advance of tech, Complete enumeration survey can be done.
+          - Relation between Cause and result -> Correlation : Correlation is truly meaningful.
+      
+1-2-2.  - Analysis skill of Big data
+          - Pattern Analysis : To divide data into a few group that has similar features.
+          - Linkage Analysis : To find a relationship with two or more variables ( EX. Beer and Diaper at a mart. ) 
+          - Gene Algorithm : To find the best solution at each time ( EX. When is the best for the tv show )
+          - Machine Learning : Get a model from the past data and predict with new data.
+          - Regression Analysis : To predict target variable with a numeric explanation variable ( EX. Return from the investment )
+          - Social Network Anlysis : To find out relationships online ( EX. the number of friends at Facebook, the number of followers at Instagram )
+          - Emotion Analysis : To find out pos and neg from texxt ( EX. Comments and review from movie or items. )
+          
+      - Dangerous factors and solutions
+          - Invasion of privacy -> From agreement to responsibility
+              : Google can predict what users will do within 1 hour with 87% accuracy.
+                 -> Not Customers agreements, Data user is responsible for the use.
+          - Destroy of principle of liability -> Adhering to result, not prediction
+              : can block crime before it happens.
+                  -> Potential criminals are not criminals
+          - Misuse -> Allowing to access to algorithm
+              : Due to the misuse of data, victims happen ( EX. One of the senators had been included at Black List of Air Flight. )
+                  -> To save victims.
+
+1-3-1. Data Science
+
+    - Data Science is a field of study that extracts meaningful information from raw data set.
+    
+    - Factors of Data Science
+           - Analytic field : Mathmatical and Statistical Knowledge etc.
+           - Information Technology field : Procgramming etc.
+           - Business Consulting field : Communication, Visualization, Storytelling etc.
+    
+    - Data Scientist is a person who find out meaningful value from the raw data set based on Data Science.
+    
+    - The things that Data Scientists are required to be equipped with.
+           - IT , Analytics ( Hard Skill ) : Theory about Big data, Advanced Experience in data analysis.
+           - Domain Expertise, Analytics ( Soft Skill ) : Communication, Cooperation
+           - Analytics is between Hard Skill and Soft Skill 
+     
+     - The limits of Data Science
+           - Even if the data science is developed, due to the fact that interpretation is totally subjective,
+             Human's interfere will still be inevitable.
+
+1-3-2. New Knowledge in big data
+    
+     - Encoding skills of privacy data
+            - Data Masking : change the value with unknown letter. 
+            - Pseudonymization : Change the value with totally difference value.
+            - Aggregation : Providing summarized value.
+            - Data Reduction : Removing data value.
+            - Data Suppression : Providing a range of value.
+     
+     - Integrity and Lake
+            - Data Integrity : Data always must be valid, accurate.
+            - Data Lake : Database like hadoop for tremendous data regardless of the type of data.

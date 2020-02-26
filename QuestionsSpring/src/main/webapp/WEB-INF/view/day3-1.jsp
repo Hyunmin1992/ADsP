@@ -1,0 +1,149 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<meta charset="EUC-KR">
+<title>ADsP</title>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/js/check.js"></script>
+
+</head>
+<style type="text/css">
+input[type=radio] {
+	width: 20px;
+	height: 20px;
+}
+</style>
+<body>
+	<header>
+		<div class="container px-5 py-5 bg-light">
+			<h1 align="center">ADsP 문제 풀이 3일차</h1>
+		</div>
+	</header>
+	<main>
+	<div id="questions">
+
+		<hr>
+		<h2>
+			<div align="center">마스터 플랜 수립 프레임 워크</div>
+		</h2>
+
+		<div class="container px-5 py-5" id="Bigtable">
+			<form action="javascript:C31('${sessionScope.name}','${sessionScope.phone}')" method="post">
+				<div>
+												<p style="color:red">16회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">1.&nbsp;&nbsp;다음 중 빅데이터의 4V를 고려한 분석 ROI에서 비즈니스 효과에 해당하는 것은?</h3>
+				</div>
+				<br>
+				<div class="row mt-0">
+					<div class="col-md-5"></div>
+					<div class="col-md-4" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A1" value="1">&nbsp;&nbsp;&nbsp;Volume<br>
+						<br> <input type="radio" name="A1" value="2">&nbsp;&nbsp;&nbsp;Variety<br>
+						<br> <input type="radio" name="A1" value="3">&nbsp;&nbsp;&nbsp;Velocity<br>
+						<br> <input type="radio" name="A1" value="4">&nbsp;&nbsp;&nbsp;Value<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				<br>
+				<div>
+								<p style="color:red">19회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">
+						2.&nbsp;&nbsp;다음 중 난이도와 시급성을 고려하였을 때,<br>우선적으로 추진해야 하는 분석 과제로 적절한 것은?
+					</h3>
+				</div>
+				<div class="row mt-0">
+					<div class="col-md-4"></div>
+					<div class="col-md-6" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A2" value="1">&nbsp;&nbsp;&nbsp;난이도 : 쉬움, 시급성 : 현재<br>
+						<br> <input type="radio" name="A2" value="2">&nbsp;&nbsp;&nbsp;난이도 : 어려움, 시급성 : 미래<br>
+						<br> <input type="radio" name="A2" value="3">&nbsp;&nbsp;&nbsp;난이도 : 쉬움, 시급성 : 미래<br>
+						<br> <input type="radio" name="A2" value="4">&nbsp;&nbsp;&nbsp;난이도 : 어려움, 시급성 : 현재<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				<br>
+
+				<div>
+				<p style="color:red">18회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">
+						3.&nbsp;&nbsp;분석 마스터 플랜 수립에서 과제 우선순위 결정과 관련한 내용으로<br>부적절한 것은?
+					</h3>
+				</div>
+				<div class="row mt-0">
+					<div class="col-md-1"></div>
+					<div class="col-md-11" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A3" value="1">&nbsp;&nbsp;&nbsp;가치는 투자비용 요소이다.<br>
+						<br> <input type="radio" name="A3" value="2">&nbsp;&nbsp;&nbsp;전략적 중요도, ROI, 실행 용이성은 분석과제 우선순위 결정에 고려할 사항이다.<br>
+						<br> <input type="radio" name="A3" value="3">&nbsp;&nbsp;&nbsp;시급성과 전략적 필요성은 전략적 중요도의 평가 요소이다.<br>
+						<br> <input type="radio" name="A3" value="4">&nbsp;&nbsp;&nbsp;적용 기술의 안전성 검증은 기술 용이성의 평가 요소이다.<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+			<br>
+
+				<div>
+				<p style="color:red">11회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">
+						4.&nbsp;&nbsp;다음 중 데이터 분석 구현을 위한 적용 우선순위 평가 시 주요 고려요소가 아닌 것은?
+					</h3>
+				</div>
+				<div class="row mt-0">
+					<div class="col-md-4"></div>
+					<div class="col-md-5" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A4" value="1">&nbsp;&nbsp;&nbsp;전략적 중요도<br>
+						<br> <input type="radio" name="A4" value="2">&nbsp;&nbsp;&nbsp;분석 ROI<br>
+						<br> <input type="radio" name="A4" value="3">&nbsp;&nbsp;&nbsp;기술적용 수준<br>
+						<br> <input type="radio" name="A4" value="4">&nbsp;&nbsp;&nbsp;실행 용이성<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				<br> <br>
+				<div class="py-5" align="center">
+					<button type="submit" class="btn btn-success"><p style="font-size:30px">제출하기</p></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	</main>
+	<br>
+	<br>
+	<footer>
+		<div class="container px-5 pb-5">
+			<div class="row">
+				<c:choose>
+					<c:when test="${nextpage ne 2}">
+						<div class="col-md-6" align="left">
+							<a href="/day/${day}/${prepage}"><div class="btn btn-light"><p style="font-size:30px">이전
+									문제</p></div></a>
+						</div>
+					</c:when>
+					<c:otherwise>
+						<div class="col-md-6" align="left">
+							<a href="/questionList"><div class="btn btn-light"><p style="font-size:30px">일차
+									선택</p></div></a>
+						</div>
+					</c:otherwise>
+				</c:choose>
+				<div class="col-md-6" align="right">
+					<a href="/day/${day}/${nextpage}"><div class="btn btn-light	"><p style="font-size:30px">다음문제</p></div></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

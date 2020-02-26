@@ -1,0 +1,139 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<meta charset="EUC-KR">
+<title>ADsP</title>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/js/check.js"></script>
+
+</head>
+<style type="text/css">
+input[type=radio] {
+	width: 20px;
+	height: 20px;
+}
+</style>
+<body>
+	<header>
+		<div class="container px-5 py-5 bg-light">
+			<h1 align="center">ADsP 문제 풀이 4일차</h1>
+		</div>
+	</header>
+	<main>
+	<div id="questions">
+
+		<hr>
+		<h2>
+			<div align="center">가설 검정</div>
+		</h2>
+
+		<div class="container px-5 py-5" id="Bigtable">
+			<form action="javascript:C46('${sessionScope.name}','${sessionScope.phone}')" method="post">
+				<div>
+												<p style="color:red">17회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">1.&nbsp;&nbsp;Wage데이터에서 wage에 대한 t-test를 실시하였다. 다음 설명 중 부적절한 것은?</h3>
+				</div>
+				<br>
+				<div class="container px-5 py-2" align="center">
+					<img src="/img/461.png" width="600">&nbsp;&nbsp;<br>
+				</div>
+				<div class="row mt-0">
+					<div class="col-md-1"></div>
+					<div class="col-md-11" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A1" value="1">&nbsp;&nbsp;&nbsp;한 집단의 평균에 대한 t-test 결과이다.<br>
+						<br> <input type="radio" name="A1" value="2">&nbsp;&nbsp;&nbsp;양측검정 결과를 보여주고 있다.<br>
+						<br> <input type="radio" name="A1" value="3">&nbsp;&nbsp;&nbsp;t-test의 자유도는 2999이다.<br>
+						<br> <input type="radio" name="A1" value="4">&nbsp;&nbsp;&nbsp;평균에 대한 95%신뢰구간은 귀무가설에서 설정한 평균의 참값을 포함한다.<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				<br>
+				<div>
+								<p style="color:red">14회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">
+						2.&nbsp;&nbsp;아래는 chickwts데이터 프레임을 분석한 것이다. 다음 중 결과에 대한 해석이 잘못된 것은?
+					</h3>
+				</div><br>
+								<div class="container px-5 py-2" align="center">
+					<img src="/img/462.png" width="600">&nbsp;&nbsp;<br>
+				</div>
+				<div class="row mt-0">
+					<div class="col-md-0"></div>
+					<div class="col-md-12" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A2" value="1">&nbsp;&nbsp;&nbsp;전체 관측치 수는 70개이다.<br>
+						<br> <input type="radio" name="A2" value="2">&nbsp;&nbsp;&nbsp;99% 신뢰구간을 구하기 위해서는 "conf.level=0.99"라는 옵션을 사용할 수 있다.<br>
+						<br> <input type="radio" name="A2" value="3">&nbsp;&nbsp;&nbsp;닭 무게의 점 추정량은 261.3이며, 95% 신뢰구간은 242.8에서 279.8이다.<br>
+						<br> <input type="radio" name="A2" value="4">&nbsp;&nbsp;&nbsp;닭 무게에 대한 p-value는  2.2e-16이므로 귀무가설이 기각된다.<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				<br>
+
+				<div>
+												<p style="color:red">19회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">
+						3.&nbsp;&nbsp;아래 데이터는 두 종류의 수면 유도제를 무작위로 선정된 20명의 환자를 대상으로 수명시간 증감을 측정한 자료이다.
+						아래 결과에 대한 설명으로 잘못된 것은?					</h3>
+				</div><br>
+							<div class="container px-5 py-2" align="center">
+					<img src="/img/463.png" width="800">&nbsp;&nbsp;<br>
+				</div>	
+				<div class="row mt-0">
+					<div class="col-md-0"></div>
+					<div class="col-md-12" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A3" value="1">&nbsp;&nbsp;&nbsp;유의수준 1%하에서 수면유도제 2가 수면유도제 1보다 통계적으로 유의하게 평균 수면시간을 증가시킨다고 결론지을 수 있다. 즉, 수면 유도제2가 수면유도제 1보다 더 효과적이다.<br>
+						<br> <input type="radio" name="A3" value="2">&nbsp;&nbsp;&nbsp;수면유도제 1에 의해 평균적으로 0.75시간의 수면시간이 증가하였다.<br> 
+						<br> <input type="radio" name="A3" value="3">&nbsp;&nbsp;&nbsp;수면유도제 2에 의해 평균적으로 2.33시간의 수면시간이 증가하였다.<br>
+						<br> <input type="radio" name="A3" value="4">&nbsp;&nbsp;&nbsp;두 수면유도제에 의해 증가된 평균 수면시간의 차이는 -3.37시간에서 0.21시간 사이에 있다고 95% 확신할 수 있다.<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				
+				<br> <br>
+				<div class="py-5" align="center">
+					<button type="submit" class="btn btn-success"><p style="font-size:30px">제출하기</p></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	</main>
+	<br>
+	<br>
+	<footer>
+		<div class="container px-5 pb-5">
+			<div class="row">
+				<c:choose>
+					<c:when test="${nextpage ne 2}">
+						<div class="col-md-6" align="left">
+							<a href="/day/${day}/${prepage}"><div class="btn btn-light"><p style="font-size:30px">이전
+									문제</p></div></a>
+						</div>
+					</c:when>
+					<c:otherwise>
+						<div class="col-md-6" align="left">
+							<a href="/questionList"><div class="btn btn-light"><p style="font-size:30px">일차
+									선택</p></div></a>
+						</div>
+					</c:otherwise>
+				</c:choose>
+				<div class="col-md-6" align="right">
+					<a href="/day/${day}/${nextpage}"><div class="btn btn-light	"><p style="font-size:30px">다음문제</p></div></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

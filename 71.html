@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<meta charset="utf-8">
+<title>ADsP</title>
+<script src="js/check.js"></script>
+
+</head>
+<style type="text/css">
+input[type=radio] {
+	width: 20px;
+	height: 20px;
+}
+</style>
+<body>
+	<header>
+		<div class="container px-5 py-5 bg-light">
+			<h1 align="center">ADsP 문제 풀이 7일차</h1>
+		</div>
+	</header>
+	<main>
+	<div id="questions">
+
+		<hr>
+		<h2>
+			<div align="center">주성분 분석</div>
+		</h2>
+
+		<div class="container px-5 py-5" id="Bigtable">
+			<form action="javascript:C71()" method="post">
+				<div>
+												<p style="color:red">7회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">1.&nbsp;&nbsp;아래는 1988년 서울올림픽에서의 여자 육상 7종 경기의 기록 데이터를 사용한 주성분분석 결과이다.
+					다음의 설명 중 가장 부적절한 것은?</h3>
+				</div>
+				<br>
+					<div class="container px-5 py-2" align="center">
+					<img src="img/711.png" width="800">&nbsp;&nbsp;<br>
+				</div>
+				<div class="row mt-0">
+					<div class="col-md-0"></div>
+					<div class="col-md-12" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A1" value="1">&nbsp;&nbsp;&nbsp;한 개의 주성분으로 자료를 축약할 때 전체 분산의 61.8%가 설명 가능하다.<br>
+						<br> <input type="radio" name="A1" value="2">&nbsp;&nbsp;&nbsp;두 개의 주성분으로 자료를 축약할 때 전체 분산의 12.8%가 설명 가능하다.<br>
+						<br> <input type="radio" name="A1" value="3">&nbsp;&nbsp;&nbsp;정보손실율 20% 이하로 변수 축약을 한다면 세 개의 주성분을 사용하는 것이 적당하다.<br>
+						<br> <input type="radio" name="A1" value="4">&nbsp;&nbsp;&nbsp;첫번째 주성분의 분산이 가장 크다.<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				
+				<br>
+				<div>
+					<p style="color:red">13회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">2.&nbsp;&nbsp;주성분 분석은 p개의 변수들을 중요한 m(p)개의 주성분으로 표현하여 전체 변동을 설명하는 방법이다. 다음 중 주성분 개수(m)를 선택하는 방법에 대한 설명으로 가장 부적절한 것은?</h3>
+				</div>
+				<div class="row mt-0">
+									<div class="col-md-0"></div>
+					<div class="col-md-12" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A2" value="1">&nbsp;&nbsp;&nbsp;전체 변이 공헌도방법은 전체 변이의 70~90%가 되도록 주성분의 수를 결정한다.<br>
+						<br> <input type="radio" name="A2" value="2">&nbsp;&nbsp;&nbsp;평균 고유값방법은 고유값들의 평균을 구한 후 고유값이 평균값 이상이 되는 주성분을 제거하는 방법이다.<br>
+						<br> <input type="radio" name="A2" value="3">&nbsp;&nbsp;&nbsp;scree graph를 이용하는 방법은 고유값의 크기순으로 산점도를 그린 그래프에서 감소하는 추세가 원만해지는 지점에서 1을 뺀 개수를 주성분의 개수로 선택한다.<br>
+						<br> <input type="radio" name="A2" value="4">&nbsp;&nbsp;&nbsp;주성분은 주성분을 구성하는 변수들의 계수 구조를 파악하여 적절하게 해석되어야 하며, 명확하게 정의된 해석 방법이 있는 것이 아니다.<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>				
+	
+				<br>
+				<div>
+								<p style="color:red">5회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">3.&nbsp;&nbsp;아래는 89구역에서 54종의 식물에 대해 10년 넘게 측정한 평균건조무게 자료(변수 54개, 관측치 89개) 주성분분석을 실행한 결과의 일부분이다. 다음 설명 중 가장 부적절한 것은?</h3>
+				</div><br>
+									<div class="container px-5 py-2" align="center">
+					<img src="img/713.png" width="800">&nbsp;&nbsp;<br>
+				</div>
+				<div class="row mt-0">
+									<div class="col-md-1"></div>
+					<div class="col-md-11" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A3" value="1">&nbsp;&nbsp;&nbsp;첫 번째 주성분은 한 변수의 변동량의 39.4%를 설명한다.<br>
+						<br> <input type="radio" name="A3" value="2">&nbsp;&nbsp;&nbsp;주성분분석은 상관관계가 있는 변수들을 결합한 것이다.<br>
+						<br> <input type="radio" name="A3" value="3">&nbsp;&nbsp;&nbsp;54개의 변수를 4개의 주성분변수로 축약했을 때의 정보의 손실은 약 17.4%이다.<br>
+						<br> <input type="radio" name="A3" value="4">&nbsp;&nbsp;&nbsp;첫 세개의 주성분은 약 10.9%의 원 변수의 변동량을 설명할 수 있다.<br>
+					</div>
+				</div>
+				<br>
+				<hr>
+			<br>
+				<div>
+								<p style="color:red">11회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">4.&nbsp;&nbsp;다음은 4개의 변수를 가진 데이터프레임 USArrests에 주성분분석을 적용해서 얻은 결과이다. 변수들의 전체 변동의 80% 이상을 설명하기 위해 필요한 최소 주성분은  몇 개인가?</h3>
+				</div>
+													<div class="container px-5 py-2" align="center">
+					<img src="img/714.png" width="600">&nbsp;&nbsp;<br>
+				</div>
+				<div class="row mt-0">
+									<div class="col-md-5"></div>
+					<div class="col-md-4" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A4" value="1">&nbsp;&nbsp;&nbsp;1개<br>
+						<br> <input type="radio" name="A4" value="2">&nbsp;&nbsp;&nbsp;2개<br>
+						<br> <input type="radio" name="A4" value="3">&nbsp;&nbsp;&nbsp;3개<br>
+						<br> <input type="radio" name="A4" value="4">&nbsp;&nbsp;&nbsp;4개<br>
+					</div>
+				</div>
+				<br>
+				<hr>
+				<div class="py-5" align="center">
+					<button type="submit" class="btn btn-success"><p style="font-size:30px">제출하기</p></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	</main>
+	<br>
+	<br>
+	<footer>
+		<div class="container px-5 pb-5">
+			<div class="row">
+
+						<div class="col-md-6" align="left">
+							<a href="questionList.html"><div class="btn btn-light"><p style="font-size:30px">일차
+									선택</p></div></a>
+						</div>
+					</c:otherwise>
+				</c:choose>
+				<div class="col-md-6" align="right">
+					<a href="72.html"><div class="btn btn-light	"><p style="font-size:30px">다음문제</p></div></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

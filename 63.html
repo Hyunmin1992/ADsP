@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<meta charset="utf-8">
+<title>ADsP</title>
+
+<script src="js/check.js"></script>
+
+</head>
+<style type="text/css">
+input[type=radio] {
+	width: 20px;
+	height: 20px;
+}
+</style>
+<body>
+	<header>
+		<div class="container px-5 py-5 bg-light">
+			<h1 align="center">ADsP 문제 풀이 6일차</h1>
+		</div>
+	</header>
+	<main>
+	<div id="questions">
+
+		<hr>
+		<h2>
+			<div align="center">시계열 분석</div>
+		</h2>
+
+		<div class="container px-5 py-5" id="Bigtable">
+			<form action="javascript:C63()" method="post">
+				<div>	<p style="color:red">16회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">
+						1.&nbsp;&nbsp;다음 중 시간의 흐름에 따라 관측된 데이터에는 무엇인가?
+					</h3>
+				</div><br>
+				<div class="row mt-0">
+					<div class="col-md-4"></div>
+					<div class="col-md-6" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A2" value="1">&nbsp;&nbsp;&nbsp;질적자료<br>
+						<br> <input type="radio" name="A2" value="2">&nbsp;&nbsp;&nbsp;시계열자료<br>
+						<br> <input type="radio" name="A2" value="3">&nbsp;&nbsp;&nbsp;양적자료<br>
+						<br> <input type="radio" name="A2" value="4">&nbsp;&nbsp;&nbsp;횡단면자료<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				<br>
+				<div>
+						<p style="color:red">8회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">2.&nbsp;&nbsp;다음 시계열분석에서 정상성의 특징이 아닌 것은?</h3>
+				</div>
+				<br>
+				<div class="row mt-0">
+					<div class="col-md-1"></div>
+					<div class="col-md-11" style="font-size: 25px" align="left">
+						<br> <input type="radio" name="A1" value="1">&nbsp;&nbsp;&nbsp;평균이 일정하다. 즉, 모든 시점에 대해 일정한 평균을 가진다.<br>
+						<br> <input type="radio" name="A1" value="2">&nbsp;&nbsp;&nbsp;분산도 시점에 의존하지 않는다.<br>
+						<br> <input type="radio" name="A1" value="3">&nbsp;&nbsp;&nbsp;자기회귀식에는 백색잡음이 없다.<br>
+						<br> <input type="radio" name="A1" value="4">&nbsp;&nbsp;&nbsp;공분산은 단지 시차에만 의존하고 실제 어느 시점 t,s에 의존하지 않는다.<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+
+				<div>
+										<p style="color:red">18회 기출문제</p>
+					<h3 class="bg-link pt-3" align="center">
+						3.&nbsp;&nbsp;시계열 분석을 위해서는 정상성을 만족해야 한다. 따라서 주어진 자료가 정상성을 만족하는지 판단하는 과정이 필요하다. 자료가 추세를 보이는 경우에는 현 시점의 자료값에서 전 시점의 자료를 빼는 방법을 통해 비정상시계열을 정상시계열로 바꾸어준다. 이 방법은 무엇인가?
+					</h3>
+				</div><br>
+				<div class="row mt-0">
+					<div class="col-md-4"></div>
+					<div class="col-md-6" style="font-size: 25px" align="left">
+						<input type="text" id="A3" name="A3">
+					</div>
+				</div>
+				<br>
+				<br>
+				<hr>
+				
+				<br> <br>
+				<div class="py-5" align="center">
+					<button type="submit" class="btn btn-success"><p style="font-size:30px">제출하기</p></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	</main>
+	<br>
+	<br>
+	<footer>
+		<div class="container px-5 pb-5">
+			<div class="row">
+
+						<div class="col-md-4" align="left">
+							<a href="62.html"><div class="btn btn-light"><p style="font-size:30px">이전
+									문제</p></div></a>
+						</div>
+
+						<div class="col-md-4" align="center">
+							<a href="questionList.html"><div class="btn btn-light"><p style="font-size:30px">일차
+									선택</p></div></a>
+						</div>
+
+				<div class="col-md-4" align="right">
+					<a href="64.html"><div class="btn btn-light	"><p style="font-size:30px">다음문제</p></div></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
